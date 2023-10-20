@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign up</title>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
             background-color: #f2f2f2;
             padding: 10%;
         }
@@ -20,45 +24,77 @@
             height: 60vh;
             margin: auto;
             background-color: lightgreen;
-            background-image: url(https://picsum.photos/seed/picsum/200/300);
+            background-image: url(./images/01.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: center center;
+        }
+
+        table,
+        tr,
+        td {
+            /* border: 1px solid black; */
+            border-collapse: collapse;
+            /* background-color: aliceblue; */
+            /* width: 100%; */
+            height: 8vh;
+            /* text-align: center; */
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            width: 50%;
         }
 
         h3 {
-            font-size: 24px;
+            font-size: 40px;
             text-align: left;
-            padding: 10px 20px;
+            /* padding: 10px 20px; */
+            color: #ccc;
+            margin-left: 50px;
+            margin-top: 50px;
+
 
         }
 
-        a{
+        a {
             /* 超連結不要底線 */
             text-decoration: none;
+            color: #ccc;
+            display: inline-block;
+            margin-right: 50px;
+            margin-top: 30px;
+            font-size: 25px;
+        }
+
+        .a-link {
+            text-align: right;
+            /* padding-right: 40px; */
+        }
+
+        a:hover {
             /* 設定底線 */
-            border-bottom: 1px solid black;
-            background-color: gray;
-
+            border-bottom: 1px solid #ccc;
+            
         }
 
-        .a-link{
-            /* margin-right: 20px; */
-            padding-left: 700px;
-        }
 
-        .container{
+        .container {
             margin-top: 15%;
         }
 
         fieldset {
             text-align: center;
             border: 0px;
-            
+
             /* margin: auto; */
 
         }
 
-        input[type="submit"]{
+        input[type="submit"] {
             /* 內部間距 */
             padding: 10px 100px;
             border: none;
@@ -70,15 +106,23 @@
 </head>
 
 <body>
-    
+
     <div class="box">
-        <h3>Daily UI</h3>
-        <div class="a-link">
-            <h4>
-                <a href="">Login</a>
-                <a href="">Sign up</a>
-            </h4>
-        </div>
+        <nav class="nav">
+            <table>
+                <tr>
+                    <td>
+                        <h3>Daily UI</h3>
+                    </td>
+                    <td class="a-link">
+                        <a href="">Login</a>
+                        <a href="">Sign up</a>
+                    </td>
+                </tr>
+            </table>
+
+
+        </nav>
 
         <div class="container">
             <fieldset>
